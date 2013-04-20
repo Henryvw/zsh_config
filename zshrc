@@ -46,16 +46,18 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler debian gem git-extras heroku rails3 rvm sublime)
+plugins=(git bundler debian gem git-extras heroku rails3 rvm sublime history)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 # default editor
-
 export EDITOR='subl'
 export ALTERNATE_EDITOR='vim'
+
+# make .ackrc local for ack-grep
+export ACKRC=".ackrc"
 
 # RVM
 
